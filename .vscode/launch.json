@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [        
+    {
+        "type": "lldb",
+        "request": "launch",
+        "name": "Debug",
+        "program": "${workspaceRoot}/target/Debug/discord_core_api_rust.exe",
+        "env": {"RUST_BACKTRACE":"full"},"args": ["strace -s 0 -ff -o cmd.strace cmd"]
+    },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release",
+            "program": "${workspaceRoot}/target/Release/discord_core_api_rust.exe"
+        }
+    ]
+}

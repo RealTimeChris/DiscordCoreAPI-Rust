@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Release",
+			"args": [
+				"+nightly",
+				"build",
+				"-v",
+				"--release"
+			],
+			"command": "cargo",
+			"group": "build"
+		},
+		{
+			"label": "Build Debug",
+			"args": [
+				"+nightly",
+				"build",
+				"-v"
+			],
+			"command": "cargo",
+			"group": "build"
+		}
+	]
+  }

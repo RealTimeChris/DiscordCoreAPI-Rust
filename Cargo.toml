@@ -1,0 +1,14 @@
+[package]
+name = "discord_core_api_rust"
+version = "0.9.0"
+edition = "2021"
+overflow-checks = false
+
+[dependencies]
+containers = "0.9.13"
+rand = "0.8.4"
+base64 = "0.13.0"
+openssl="0.10.38"
+num-traits = "0.2.14"
+num-derive = "0.2"
+json= "0.2.0"
